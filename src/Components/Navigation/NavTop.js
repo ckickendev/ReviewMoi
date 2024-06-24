@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Navigation/Nav.css"
+import "../Navigation/NavTop.css"
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 
@@ -8,9 +8,10 @@ import {LiaUserFriendsSolid} from "react-icons/lia"
 import {IoNotificationsOutline} from "react-icons/io5"
 import {TbMessage} from "react-icons/tb"
 
-import Profile from "../../assets/profile.jpg"
+import logo from '../../assets/logo.png';
+import Profile from '../../Pages/Profile/Profile';
 
-const Nav = ({search,setSearch,setShowMenu,profileImg}) => {
+const NavTop = ({search,setSearch,setShowMenu,profileImg}) => {
 
 
   
@@ -18,7 +19,7 @@ const Nav = ({search,setSearch,setShowMenu,profileImg}) => {
     <nav>
         <div className="n-logo">
             <Link to="/home" className='logo' style={{color:"black",textDecoration:"none"}}>
-              <h1>Face <span>Gram</span></h1>
+              <img src={logo} width="100%" height="100%" />
             </Link>
         </div>
 
@@ -59,4 +60,4 @@ const Nav = ({search,setSearch,setShowMenu,profileImg}) => {
   )
 }
 
-export default Nav
+export default NavTop

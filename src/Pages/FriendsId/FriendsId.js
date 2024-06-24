@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../../Components/Navigation/Nav'
+import NavTop from '../../Components/Navigation/NavTop'
 import Left from '../../Components/LeftSide/Left'
 import FriendsProfileMiddle from '../../Components/FriendsProfile/FriendsProfileMiddle'
 import { useState } from 'react'
@@ -15,7 +15,7 @@ const FriendsId = ({friendProfile}) => {
 
   return (
     <div className='interface'>
-        <Nav 
+        <NavTop
              search={search}
              setSearch={setSearch}
              showMenu={showMenu}

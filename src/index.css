@@ -15,4 +15,17 @@ body{
     width: 100vw;
 }
 
+.interface { 
+    padding: 0px 30px;
+}
 
+p { 
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    font-family: National;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0 0 11px;
+}

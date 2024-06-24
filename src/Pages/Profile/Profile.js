@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Left from '../../Components/LeftSide/Left'
 import ProfileMiddle from '../../Components/Profile/ProfileMiddle'
 import Right from '../../Components/RightSide/Right'
-import Nav from '../../Components/Navigation/Nav'
+import NavTop from '../../Components/Navigation/NavTop'
 import "../Profile/Profile.css"
 import ProfileImg from "../../assets/profile.jpg"
 
@@ -30,7 +30,7 @@ const Profile = () => {
 
   return (
     <div className='interface'>
-        <Nav
+        <NavTop
         search={search}
         setSearch={setSearch}
         showMenu={showMenu}
