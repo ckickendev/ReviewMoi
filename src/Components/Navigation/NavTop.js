@@ -10,6 +10,8 @@ import {TbMessage} from "react-icons/tb"
 
 import logo from '../../assets/logo.png';
 import Profile from '../../Pages/Profile/Profile';
+import { ButtonCm } from '../Common/ButtonCm';
+import COLOR from '../Constant';
 
 const NavTop = ({search,setSearch,setShowMenu,profileImg}) => {
 
@@ -36,24 +38,12 @@ const NavTop = ({search,setSearch,setShowMenu,profileImg}) => {
         </form>
       </div>
 
-      <div className="social-icons">
-      <Link to="/home" style={{textDecoration:"none",display:"flex",alignItems:"center",color:"white"}}>
-        <AiOutlineHome className='nav-icons'/>
-      </Link>
-
-        <Link to="/notification" id='notifi' style={{marginTop:"8px"}}><IoNotificationsOutline className='nav-icons'/><span>5</span></Link>
-           
-        <TbMessage className='nav-icons'/>
-        <LiaUserFriendsSolid 
-        className='nav-icons'
-        onClick={()=>setShowMenu(true)}/>
-      </div>
-
-
        <div className="n-profile" >
           <Link to="/profile"> 
             <img src={profileImg ? (profileImg) : Profile} className='n-img' style={{marginBottom:"-7px"}}/>
           </Link>
+          <ButtonCm text="Login" color="black" background={COLOR.WHITE} border="1px solid black" />
+          <ButtonCm text="Register" color="white" background={COLOR.RED} border="1px solid ff2b00" />
       </div>
   
     </nav>

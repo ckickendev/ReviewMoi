@@ -9,6 +9,9 @@
     column-gap: 20px;
     padding: 0px 10px;
     position: relative;
+    background-color: #f6f6f7;
+
+    border-top: 1px solid #d4d4d7;
 }
 @media screen and (max-width:1024px){
     .home{

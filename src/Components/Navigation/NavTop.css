@@ -7,6 +7,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 12px 100px;
 }
 .social-icons{
     display: flex;
