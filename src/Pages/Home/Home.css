@@ -12,6 +12,7 @@
     background-color: #f6f6f7;
 
     border-top: 1px solid #d4d4d7;
+    padding: 12px 100px;
 }
 @media screen and (max-width:1024px){
     .home{

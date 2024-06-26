@@ -15,7 +15,9 @@ export const ButtonCm = ({
         color: color || "white",
         border: border || "2px solid orangered",
         padding: padding || "10px 20px",
-        cursor: "pointer"
+        cursor: "pointer",
+        fontSize: "14px",
+        margin: "0px 10px"
       }}
       onClick={handleClickButton}
     >

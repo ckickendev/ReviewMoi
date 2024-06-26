@@ -49,12 +49,18 @@ nav{
     width: 50%;
     display: flex;
     align-items: center;
-    
 }
 .n-form{
     position: relative;
     width: 100%;
     flex: 1;
+
+}
+
+.n-form input{
+    background-color: #f6f6f7;
+    border: 1px solid #de9c9c;
+
 }
 #n-search{
     width: 95%;

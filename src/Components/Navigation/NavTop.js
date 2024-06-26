@@ -30,7 +30,7 @@ const NavTop = ({search,setSearch,setShowMenu,profileImg}) => {
         <form className='n-form' onSubmit={(e)=>e.preventDefault()} >
           <SearchIcon className='search-icon'/>
           <input type="text" 
-          placeholder='Search post'
+          placeholder='Search product'
           id='n-search'
           value={search}
           onChange={(e)=>setSearch(e.target.value)}
@@ -39,9 +39,9 @@ const NavTop = ({search,setSearch,setShowMenu,profileImg}) => {
       </div>
 
        <div className="n-profile" >
-          <Link to="/profile"> 
+          {/* <Link to="/profile"> 
             <img src={profileImg ? (profileImg) : Profile} className='n-img' style={{marginBottom:"-7px"}}/>
-          </Link>
+          </Link> */}
           <ButtonCm text="Login" color="black" background={COLOR.WHITE} border="1px solid black" />
           <ButtonCm text="Register" color="white" background={COLOR.RED} border="1px solid ff2b00" />
       </div>
